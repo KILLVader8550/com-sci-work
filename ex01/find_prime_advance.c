@@ -32,6 +32,8 @@ int is_prime (char *str)
 
     i = 0;
     nb = ft_atoi(str);
+    if (nb < 2)
+        return (0);
     if (nb == 2 || nb == 3)
         return (1);
     while (i < (nb / 2))
