@@ -12,6 +12,16 @@ void is_prime (int nb)
     int i;
 
     i = 0;
+    if (nb < 2)
+    {    
+        printf("Is not prime.\n");
+        return ;
+    }
+    if (nb == 2 || nb == 3)
+    {    
+        printf("Is prime.\n");
+        return ;
+    }
     while (i++ < sqrt(nb))
     {
         if (nb % i == 0)
@@ -34,6 +44,6 @@ int main()
     is_prime(nb1);
     get_num(&nb2);
     printf("Your number divide by 2: %d | ", nb2 / 2);
-    is_prime(nb2);
+    is_prime(nb2 / 2);
     return (0);
 }
