@@ -35,14 +35,14 @@ void is_prime (int nb)
 
 int main()
 {
-    int nb1;
-    int nb2;
+    int     nb1;
+    char    c;
 
+    printf("Enter your char: ");
+    scanf("%c", &c);
+    printf("Your char: %c\n", c);
     get_num(&nb1);
-    printf("Your number: %d | ", nb1);
-    is_prime(nb1);
-    get_num(&nb2);
-    printf("Your number divide by 2: %d | ", nb2 / 2);
-    is_prime(nb2 / 2);
+    printf("Your number divide by 2: %d | ", nb1 / 2);
+    is_prime(nb1 / 2);
     return (0);
 }
