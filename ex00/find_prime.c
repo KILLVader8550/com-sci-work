@@ -35,7 +35,6 @@ void is_prime (int nb)
 
 int main()
 {
-    int i;
     int nb1;
     int nb2;
 
