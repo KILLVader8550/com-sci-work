@@ -14,7 +14,7 @@ void is_prime (int nb)
     i = 0;
     if (nb < 2)
     {    
-        printf("%d Is not prime.\n", nb);
+        printf("%d is not prime.\n", nb);
         return ;
     }
     if (nb == 2 || nb == 3)
@@ -26,7 +26,7 @@ void is_prime (int nb)
     {
         if (nb % i == 0)
         {    
-            printf("%d ss not prime.\n", nb);
+            printf("%d is not prime.\n", nb);
             return ;
         }
     }
