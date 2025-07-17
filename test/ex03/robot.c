@@ -42,14 +42,14 @@ int main()
             if (dir == 0)
                 dir = 3;
             else
-                dir -= 1;
+                dir--;
         }
         if (input[i] == 'A' || input[i] == 'a')
         {
             if (dir == 3)
                 dir = 0;
             else
-                dir += 1;
+                dir++;
         }
         if (input[i] == 'W' || input[i] == 'w')
             forward(pos, dir);
